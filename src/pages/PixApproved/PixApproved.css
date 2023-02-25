@@ -1,0 +1,22 @@
+.closeButton {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.avatar {
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textPix {
+    margin-top: 10vh;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}

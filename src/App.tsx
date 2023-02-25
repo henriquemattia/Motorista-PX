@@ -1,10 +1,10 @@
-import { PixApproved } from "./pages/PixApproved/PixApproved"
+import { QRcodeGenerated } from "./pages/QRcodeGenerated/QRcodeGenerated"
 
 function App() {
 
   return (
     <div className="App">
-      <PixApproved />
+      <QRcodeGenerated />
     </div>
   )
 }

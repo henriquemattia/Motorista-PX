@@ -1,0 +1,23 @@
+.textTop{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.qrCode{
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5vh;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid gray;
+}
+
+.duplicateIcon {
+    background-color: orange;
+}
