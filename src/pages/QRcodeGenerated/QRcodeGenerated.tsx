@@ -4,27 +4,33 @@ import './QRcodeGenerated.css'
 
 export function QRcodeGenerated() {
     return (
-        <>
+        <div className="container">
             <div className="textTop">
-                <p>QRCode</p>
-                <h2>QRCode Gerado!</h2>
+                <p className="textTop-1">QRCode</p>
+                <h2 className="textTop-2">QRCode Gerado!</h2>
             </div>
-            <div className="qrCode">
-                <img src={qrCode} alt="" />
 
-                <div className="box">
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, voluptatum dolorem? Assumenda amet </p>
-                    </div>
+            <div className="container-center">
 
-                    <div className="duplicateIcon">
-                        <img src={copySvg} alt="icone de cópia" />
+                <div className="qrCode-area">
+                    <img src={qrCode} alt="" />
+
+                    <div className="copy-area">
+
+                        <div className="textGray">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique potenti bibendum Lorem ipsum dolor</p>
+                        </div>
+
+                        <div className="duplicateIcon">
+                            <img src={copySvg} alt="icone de cópia" />
+                        </div>
                     </div>
                 </div>
+
             </div>
 
-            <button>Fechar</button>
-        </>
+            <button className="button-close">Fechar</button>
+        </div>
 
     )
 }
