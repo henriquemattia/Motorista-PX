@@ -1,0 +1,100 @@
+.container-ballance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-ballance>p {
+    margin-top: 5vh;
+    font-size: 16px;
+    color: #BDBDBD;
+}
+
+.label-style {
+    font-size: 16px;
+    margin-bottom: 2vh;
+    color: #757575;
+}
+
+.payment-select {
+    display: flex;
+    flex-direction: column;
+    min-width: 35vw;
+
+    margin-top: 12vh;
+    margin-bottom: 10vh;
+}
+
+.payment-select>div {
+    padding: 8px 16px;
+    background-color: #FFFFFF;
+    border: 1px solid #CBCBCB;
+    border-radius: 8px;
+}
+
+.payment-select>div>select {
+    color: #CCCCCC;
+    width: 100%;
+    border: none;
+    background-color: #FFFFFF;
+
+}
+.payment-select>div>select:focus{
+    border-color: red 1px;
+}
+
+.value-input {
+    display: flex;
+    flex-direction: column;
+    min-width: 35vw;
+}
+
+.value-input>input {
+    padding: 8px 16px;
+    background-color: #FFFFFF;
+    border: 1px solid #CBCBCB;
+    border-radius: 8px;
+}
+
+.value-input>input::placeholder {
+    color: #CCCCCC;
+    background-color: #FFFFFF;
+}
+
+.buttons-area {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 13vh;
+    display: flex;
+    gap: 2.5rem;
+}
+
+.button-back {
+    background-color: #FFFFFF;
+    border: 1px solid #FF7E2E;
+    border-radius: 8px;
+    width: 16rem;
+    height: 4.25rem;
+
+    color: #FF7E2E;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.button-generate {
+    width: 16rem;
+    height: 4.25rem;
+    background: #FF7E2E;
+    border-color: transparent;
+    border-radius: 8px;
+
+    font-weight: 700;
+    font-size: 1rem;
+    color: #FAFAFA;
+}
+
+.button-generate:hover {
+    background-color: #f3701e;
+    cursor: pointer;
+}
