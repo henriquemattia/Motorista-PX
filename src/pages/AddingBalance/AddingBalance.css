@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 .container-ballance>p {
@@ -20,7 +21,7 @@
 .payment-select {
     display: flex;
     flex-direction: column;
-    min-width: 35vw;
+    width: 35vw;
 
     margin-top: 12vh;
     margin-bottom: 10vh;
@@ -41,14 +42,13 @@
 
 }
 .payment-select>div>select:focus{
-    border-color: red 1px;
     outline: none;
 }
 
 .value-input {
     display: flex;
     flex-direction: column;
-    min-width: 35vw;
+    width: 35vw;
 }
 
 .value-input>input {
@@ -65,10 +65,14 @@
     outline: none;
 }
 
-.buttons-area {
-    position: absolute;
+
+
+.buttons-area > div{
+    max-width: 90vw;
     bottom: 0;
+    margin-top: 10vh;
     margin-bottom: 13vh;
+    padding: 30px;
     display: flex;
     gap: 2.5rem;
 }
@@ -108,4 +112,15 @@
 .button-generate:hover {
     background-color: #f3701e;
     cursor: pointer;
+}
+
+@media(max-width: 1000px){
+    .value-input{
+        width: 60vw;
+    }
+
+    .payment-select{
+        margin-top: 4vh;
+        width: 60vw;
+    }
 }
