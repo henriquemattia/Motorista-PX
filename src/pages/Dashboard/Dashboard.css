@@ -1,0 +1,24 @@
+.dashBoard {
+    background-color: #F7F8F9;
+    border: 1px solid red;
+    height: 100vh;
+    width: 100vw;
+}
+
+nav {
+    position: absolute;
+    width: 5.5vw;
+    height: 90vh;
+    left: 0px;
+    top: 3.5vh;
+    border: 1px solid red;
+
+    background: #FFFFFF;
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 16px 16px 0px;
+
+}
+
+header {}
+
+section {}

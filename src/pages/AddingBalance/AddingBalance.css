@@ -42,6 +42,7 @@
 }
 .payment-select>div>select:focus{
     border-color: red 1px;
+    outline: none;
 }
 
 .value-input {
@@ -56,10 +57,12 @@
     border: 1px solid #CBCBCB;
     border-radius: 8px;
 }
-
 .value-input>input::placeholder {
     color: #CCCCCC;
     background-color: #FFFFFF;
+}
+.value-input>input:focus{
+    outline: none;
 }
 
 .buttons-area {
@@ -80,6 +83,14 @@
     color: #FF7E2E;
     font-weight: 700;
     font-size: 16px;
+
+    transition: 0.3s;
+}
+.button-back:hover{
+    cursor: pointer;
+    color: #FAFAFA;
+    background: #FF7E2E;
+    border-color: transparent;
 }
 
 .button-generate {
@@ -92,8 +103,8 @@
     font-weight: 700;
     font-size: 1rem;
     color: #FAFAFA;
+    transition: 0.3s;
 }
-
 .button-generate:hover {
     background-color: #f3701e;
     cursor: pointer;
