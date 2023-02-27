@@ -1,14 +1,10 @@
-import { AddingBalance } from "./pages/AddingBalance/AddingBalance"
-import { Dashboard } from "./pages/Dashboard/Dashboard"
-import { PixApproved } from "./pages/PixApproved/PixApproved"
-import { QRcodeGenerated } from "./pages/QRcodeGenerated/QRcodeGenerated"
+import AppRouter from "./AppRouter"
 
 function App() {
-
   return (
-    <div className="App">
-      <Dashboard />
-    </div>
+    <>
+      <AppRouter />
+    </>
   )
 }
 

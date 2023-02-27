@@ -4,36 +4,21 @@ import houseSvg from '../../assets/house.svg'
 import moneySvg from '../../assets/money.svg'
 import logOutSvg from '../../assets/log-out.svg'
 import './Dashboard.css'
+import { Navbar } from '../../components/Navbar/Navbar'
+import { Header } from '../../components/Header/Header'
+import { Table } from '../../components/Table/Table'
 
 export function Dashboard() {
     return (
         <div className="dashBoard-container">
-            <nav>  {/* Barra de navegação lateral esquerda  */}
-                <div className='nav-bar'>
-                    <div className='nav-bar_top'>
-                        <div>
-                            <img src={menuSvg} className="menu-svg" alt="ícone de menu" />
-
-                            <img src={houseSvg} className="house-svg" alt="ícoone de uma casa" />
-                        </div>
-
-                        <span />
-                    </div>
-
-                    <div className='nav-bar_botton'>
-                            <img src={moneySvg} className="money-svg" alt="" />
-                            <img src={logOutSvg} className="logOut-svg" alt="" />
-                    </div>
-                </div>
-            </nav>
+            <Navbar />  {/* Barra de navegação lateral esquerda  */}
 
             <main> {/*Conteudo principal da página */}
-                <header> {/*Cabeçalho do dashboard */}
-                    <p>Henader</p>
-                </header>
+            
+                <Header /> {/* Header */}
 
                 <section className=""> {/* Secção princiapl com a tabela*/}
-                    <p>section</p>
+                    <Table />
                 </section>
             </main>
 
