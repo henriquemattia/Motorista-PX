@@ -17,8 +17,9 @@ export function Dashboard() {
             
                 <Header /> {/* Header */}
 
-                <section className=""> {/* Secção princiapl com a tabela*/}
+                <section className="table-section"> {/* Secção princiapl com a tabela*/}
                     <Table />
+                    tabela aqui
                 </section>
             </main>
 

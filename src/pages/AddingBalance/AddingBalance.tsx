@@ -29,7 +29,7 @@ export function AddingBalance() {
                 <div className="buttons-area">
                     <div>
                         <button className="button-back">Voltar</button>
-                        <button className="button-generate">Gerar QRCode</button>
+                        <button className="button-generate orange-500">Gerar QRCode</button>
                     </div>
                 </div>
             </div>
