@@ -15,7 +15,7 @@ export function Header() {
                         <span >Aprovisionado: <strong>R$99.700,00</strong></span>
                         <span className='text-red' style={{ marginLeft: '1rem' }} >Dias pendentes <strong>R$30.000,00</strong></span>
                         
-                        <p className="utils-header"  >Dias pendentes <strong>R$30.000,00</strong></p>
+                        <p className="utils-header"  >Dias pendentes: <strong>R$30.000,00</strong></p>
 
                     </div>
                 </div>
