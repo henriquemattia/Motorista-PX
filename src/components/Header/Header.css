@@ -11,7 +11,7 @@
     display: flex;
     align-items: flex-end;
     padding-left: 2vw;
-    padding-bottom: 5vh;
+    padding-bottom: 6vh;
     width: 50%;
     font-size: 20px;
     color: #424242;
@@ -60,6 +60,7 @@
         align-items: flex-end;
         justify-content: flex-end;
         margin-bottom: 2rem;
+        margin-right: 1rem;
     }
     
     .balance-header>div {
@@ -99,6 +100,7 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 0rem;
+        margin-right: 0px;
     }
     
     .balance-header>div {

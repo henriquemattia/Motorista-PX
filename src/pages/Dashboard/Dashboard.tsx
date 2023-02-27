@@ -19,7 +19,6 @@ export function Dashboard() {
 
                 <section className="table-section"> {/* Secção princiapl com a tabela*/}
                     <Table />
-                    tabela aqui
                 </section>
             </main>
 

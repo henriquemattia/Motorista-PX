@@ -45,8 +45,8 @@ nav {
 }
 
 .menu-svg {
-    width: 35px;
-    height: 35px;
+    width: 24px;
+    height: 24px;
     margin: 0.8125rem 0px 2rem 0px;
     cursor: pointer;
 }
@@ -73,14 +73,14 @@ nav {
 }
 
 .money-svg {
-    height: 35px;
-    width: 35px;
+    height: 24px;
+    width: 24px;
     cursor: pointer;
 }
 
 .logOut-svg {
-    height: 30px;
-    width: 30px;
+    height: 24px;
+    width: 24px;
     cursor: pointer;
 }
 
