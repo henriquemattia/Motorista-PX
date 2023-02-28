@@ -1,0 +1,135 @@
+.top-table {
+    width: 100%;
+    height: 15vh;
+    top: 0;
+    display: flex;
+}
+
+.top-table_left {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.utils-container{
+    width: 30%;
+    border: #CBCBCB 1px solid;
+    border-radius: 8px;
+    padding: 8px 16px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+.utils-container > img {
+    height: 24px;
+    width: 24px;
+}
+.utils-container > span {
+    color: #D2D2D2;
+}
+
+.top-table_right {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.top-table_right>button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: #FF7E2E;
+    border-radius: 8px;
+    border: #FF7E2E;
+    font-weight: 700;
+
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FAFAFA;
+}
+
+.mid-table {
+    /* position: relative; */
+    /* max-height: ; */
+    overflow-y: scroll;
+    
+    /* background-color: rgba(0, 255, 255, 0.397); */
+}
+
+/* BOTTOM TABLE */
+
+.bottom-table {
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    bottom: 0px;
+    /* margin-top: 10vh; */
+
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(255, 0, 0, 0.342); */
+}
+
+
+@media(max-width: 1200px){
+    .utils-container{
+        width: 60%;
+    }
+    .top-table_right{
+        width: 40%;
+    }
+    
+}
+
+
+@media(max-width: 740px){
+    .top-table {
+        margin-bottom: 16px;
+        flex-direction: column;
+    }
+    
+    .top-table_left {
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .utils-container{
+        width: 40%;
+    }
+    .utils-container > img {
+        height: 17px;
+        width: 17px;
+    }
+    .utils-container > span {
+        font-size: 12px;
+    }
+    
+    .top-table_right {
+        width: 100%;
+        justify-content: center;
+    
+    }
+    
+    .top-table_right>button {
+        margin-top: 1rem;
+    
+    }
+
+    /* MID TABLE */
+    .mid-table{
+        margin-bottom: 8vh;
+    }
+
+        /* BOTTOM TABLE */
+    .bottom-table{
+        height: 10vh;
+    }
+}

@@ -6,7 +6,7 @@ import logOutSvg from '../../assets/log-out.svg'
 import './Dashboard.css'
 import { Navbar } from '../../components/Navbar/Navbar'
 import { Header } from '../../components/Header/Header'
-import { Table } from '../../components/Table/Table'
+import { TableContainer } from '../../components/TableContainer/TableContainer'
 
 export function Dashboard() {
     return (
@@ -18,7 +18,7 @@ export function Dashboard() {
                 <Header /> {/* Header */}
 
                 <section className="table-section"> {/* Secção princiapl com a tabela*/}
-                    <Table />
+                    <TableContainer />
                 </section>
             </main>
 
