@@ -1,4 +1,4 @@
-import copySvg from '../../assets/icon-park-outline_copy.svg'
+import copySvg from '../../assets/icon-park-outline_copy-2.svg'
 import codeSvg from '../../assets/icon-park-outline_pay-code-one.svg'
 import sortSvg from '../../assets/Sort.svg'
 
