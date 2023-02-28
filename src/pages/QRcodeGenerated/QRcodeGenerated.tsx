@@ -1,8 +1,11 @@
 import qrCode from "../../assets/image1.svg"
 import copySvg from "../../assets/icon-park-outline_copy.svg"
+import { useNavigate } from 'react-router-dom'
+
 import './QRcodeGenerated.css'
 
 export function QRcodeGenerated() {
+    const navigate = useNavigate()
     return (
         <div className="container">
             <div className="textTop">
@@ -29,7 +32,7 @@ export function QRcodeGenerated() {
 
             </div>
 
-            <button className="button-close">Fechar</button>
+            <button onClick={() => navigate("/pix")} className="button-close">Fechar</button>
         </div>
 
     )

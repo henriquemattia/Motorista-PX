@@ -1,7 +1,8 @@
-
+import { useNavigate } from 'react-router-dom'
 import './AddingBalance.css'
 
 export function AddingBalance() {
+    const navigate = useNavigate()
     return (
         <>
             <div className="container-ballance">
@@ -28,8 +29,8 @@ export function AddingBalance() {
 
                 <div className="buttons-area">
                     <div>
-                        <button className="button-back">Voltar</button>
-                        <button className="button-generate orange-500">Gerar QRCode</button>
+                        <button onClick={() => navigate("/")} className="button-back">Voltar</button>
+                        <button onClick={() => navigate("/qrcode")} className="button-generate orange-500">Gerar QRCode</button>
                     </div>
                 </div>
             </div>

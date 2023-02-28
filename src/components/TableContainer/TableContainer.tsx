@@ -4,8 +4,10 @@ import './TableContainer.css'
 import calendar from '../../assets/akar-icons_calendar.svg'
 import search from '../../assets/icon-park-outline_search.svg'
 import { Table } from '../Table/Table'
+import { useNavigate } from 'react-router-dom'
 
 export function TableContainer (){
+    const navigate = useNavigate()
     return (
         <>
             <div className="top-table">
@@ -22,7 +24,7 @@ export function TableContainer (){
                 </div>
 
                 <div  className="top-table_right">
-                    <button>Adicionar saldo</button>
+                    <button onClick={() => navigate("/balance")}>Adicionar saldo</button>
                 </div>
             </div>
 

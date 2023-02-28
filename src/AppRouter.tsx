@@ -16,7 +16,7 @@ export default function AppRouter () {
                 <Route path="/" element={<Dashboard />}/>
                 <Route path="/balance" element={<AddingBalance />}/>
                 <Route path="/qrcode" element={<QRcodeGenerated />}/>
-                <Route path="/pixapproved" element={<PixApproved />}/>
+                <Route path="/pix" element={<PixApproved />}/>
             </Routes>
         </BrowserRouter>
     )
