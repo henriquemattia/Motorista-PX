@@ -57,7 +57,7 @@
 .mid-table {
     /* position: relative; */
     /* max-height: ; */
-    overflow-y: scroll;
+    overflow-y: hidden;
     
     /* background-color: rgba(0, 255, 255, 0.397); */
 }
