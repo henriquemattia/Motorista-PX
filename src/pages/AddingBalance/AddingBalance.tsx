@@ -7,7 +7,7 @@ export function AddingBalance() {
     const [valor, setValor] = useState<string>()
 
     const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-        // Função que Formata o valor do imput "Valor" para que seja exibido apenas números e exiba no formato da mmoeda brasileira 'R$ 0.000,00'
+        // Função que Formata o valor do imput "Valor" para que seja exibido apenas números e exiba no formato da moeda brasileira 'R$ 0.000,00'
         let v: any = event.target.value.replace(/\D/g, ''); 
         v = (v / 100).toFixed(2) + '';
         v = v.replace(".", ",");
@@ -30,7 +30,8 @@ export function AddingBalance() {
             const rest = c[1]
             
             const d = parseFloat(b)   
-            const e = parseFloat(d + '.' + rest)
+            const e = d + '.' + rest
+            // const e = parseFloat(d + '.' + rest)
             localStorage.setItem('newbalance', `${e}`)
 
             navigate('/qrcode')
