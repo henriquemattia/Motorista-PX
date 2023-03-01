@@ -5,24 +5,25 @@ import './Header.css'
 export function Header() {
 
     const [initialBalance, setInitialBalance] = useState<string>('35500.00')
-    // let balance = initialBalance.toString()
     localStorage.setItem("balance", initialBalance)
 
-    const [newBalance, setNewBalance] = useState<any >()
-    const [newBalance2, setNewBalance2] = useState<any >()
+    const [newBalance, setNewBalance] = useState<any>()
 
-    if(localStorage.getItem("newbalance")){
+    if (localStorage.getItem("newbalance")) {
         useEffect(() => {
-            setNewBalance2(localStorage.getItem("newbalance"))
-            localStorage.setItem("balance", newBalance2)
-        }, [])
+            setNewBalance(localStorage.getItem("newbalance"))
+            localStorage.setItem("balance-modifield", newBalance)
+        }, [newBalance])
     }
     else {
-        useEffect(()=>{
-            const valorFormatado = Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(initialBalance)
-            setNewBalance(valorFormatado)
+        useEffect(() => {
+            // const initialTONUmber = parseFloat(initialBalance)
+            // const valorFormatado = Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(initialTONUmber)
+            setNewBalance(initialBalance)
         })
     }
+
+    const finalValue = Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(newBalance)
     // const [addingBalance, setAddingBalance] = useState<any>()
     // const [newBalance, setNewBalance] = useState<any>()
 
@@ -39,7 +40,7 @@ export function Header() {
     //         setNewBalance(valorInicialFormatado)
     //     }
     // }, [addingBalance])
-    
+
 
     return (
         <div className="container-header">
@@ -49,7 +50,7 @@ export function Header() {
 
             <div className="balance-header">
                 <div>
-                    <h2>Saldo disponivel: <span style={{ color: '#00AD17' }}>{newBalance2}</span></h2>
+                    <h2>Saldo disponivel: <span style={{ color: '#00AD17' }}>{finalValue}</span></h2>
                     <div style={{ gap: '2rem' }}>
                         <span >Aprovisionado: <strong>R$ 99.700,00</strong></span>
                         <span className='text-red' style={{ marginLeft: '1rem' }} >Dias pendentes <strong>R$ 30.000,00</strong></span>
