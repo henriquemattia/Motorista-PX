@@ -1,11 +1,11 @@
 
 import { useState } from 'react'
-import leftSvg from '../../assets/Pagination-Left.svg'
-import rightSvg from '../../assets/Pagination-Right.svg'
+import leftSvg from '../../../assets/Pagination-Left.svg'
+import rightSvg from '../../../assets/Pagination-Right.svg'
 
-import './PaginationTable.css'
+import './PaginationBottomTable.css'
 
-export function PaginationTable() {
+export function PaginationBottomTable() {
     const [page1, setPage1] = useState(true)
     function firstPaginator() {
         setPage1(true)

@@ -1,11 +1,10 @@
 
 import './TableContainer.css'
-
 import calendar from '../../assets/akar-icons_calendar.svg'
 import search from '../../assets/icon-park-outline_search.svg'
-import { Table } from '../Table/Table'
+import { Table } from './Table/Table'
 import { useNavigate } from 'react-router-dom'
-import { PaginationTable } from '../PaginationTable/PaginationTable'
+import { PaginationBottomTable } from './PaginationBottomTable/PaginationBottomTable'
 
 export function TableContainer (){
     const navigate = useNavigate()
@@ -33,7 +32,7 @@ export function TableContainer (){
                 <Table />
             </div>
             <div className="bottom-table">
-                <PaginationTable />
+                <PaginationBottomTable />
             </div>
         </>
     )

@@ -93,7 +93,8 @@
 .button-back:hover{
     cursor: pointer;
     color: #FAFAFA;
-    background: #FF7E2E;
+    background-color: #f3701e;
+    transition: .3s;
     border-color: transparent;
 }
 

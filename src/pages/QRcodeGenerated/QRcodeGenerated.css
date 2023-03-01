@@ -63,6 +63,7 @@
 .duplicateIcon:hover{
     cursor: pointer;
     background-color: #f3701e;
+    transition: .3s;
 }
 
 .textGray {
@@ -93,6 +94,7 @@
 }
 .button-close:hover{
     background-color: #f3701e;
+    transition: .3s;
     cursor: pointer;
 }
 

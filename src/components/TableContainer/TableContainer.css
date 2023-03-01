@@ -46,13 +46,18 @@
     background-color: #FF7E2E;
     border-radius: 8px;
     border: #FF7E2E;
-    cursor: pointer;
+    
     font-weight: 700;
 
     font-size: 18px;
     line-height: 24px;
     text-align: center;
     color: #FAFAFA;
+}
+.top-table_right>button:hover{
+    cursor: pointer;
+    background-color: #f3701e;
+    transition: .3s;
 }
 
 .mid-table {
