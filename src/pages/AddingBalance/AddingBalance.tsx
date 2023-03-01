@@ -30,9 +30,16 @@ export function AddingBalance() {
             const rest = c[1]
             
             const d = parseFloat(b)   
-            const e = d + '.' + rest
-            // const e = parseFloat(d + '.' + rest)
-            localStorage.setItem('newbalance', `${e}`)
+            // const e = d + '.' + rest
+            const e = parseFloat(d + '.' + rest)
+            let f = localStorage.getItem('balance') as any
+            const g = parseFloat(f)
+            const sum = g + e
+            const valorInicialFormatado = Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(sum)
+    //         setNewBalance(valorInicialFormatado)
+            
+            
+            localStorage.setItem('newbalance', `${valorInicialFormatado}`)
 
             navigate('/qrcode')
         } else { // caso o usuario não insira nehum valor ou tente inserir algo que nao sejam numeros, tipo letras e simbolos
