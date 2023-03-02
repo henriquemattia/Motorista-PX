@@ -85,10 +85,7 @@ nav {
 
 
 @media(max-width: 1200px) {
-    .dashBoard-container {
-        flex-direction: column;
-    }
-
+   
     .nav-bar {
         top: 0vh;
         width: 100%;
