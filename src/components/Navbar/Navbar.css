@@ -5,6 +5,7 @@ nav {
 
 .nav-bar {
     position: fixed;
+    /* width: 8vw; */
     width: 6.8rem;
     height: 90vh;
     left: 0px;
@@ -88,7 +89,7 @@ nav {
    
     .nav-bar {
         top: 0vh;
-        width: 100%;
+        width: 100vw;
         height: 10vh;
 
         box-shadow: none;

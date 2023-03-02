@@ -6,7 +6,9 @@
     padding: 0;
 }
 
-.orange-500{
+body { min-height: 100vh; }
+
+.orange-500 {
     background-color: #FF7E2E;
 }
 

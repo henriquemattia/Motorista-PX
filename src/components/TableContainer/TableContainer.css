@@ -91,7 +91,10 @@
         margin-top: 2vh;
         height: 10vh;
     }
-    
+    .mid-table {
+        overflow-y: scroll;
+
+    }
     
 }
 

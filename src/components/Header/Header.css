@@ -1,6 +1,6 @@
 .container-header {
     top: 0;
-    width: 100%;
+    width: 86vw;
     min-height: 23vh;
 
     display: flex;
@@ -52,6 +52,7 @@
 
 @media(max-width: 1200px){
     .container-header {
+        width: 97vw;
         margin-bottom: 2vh;
         margin-top: 8vh;
     }
