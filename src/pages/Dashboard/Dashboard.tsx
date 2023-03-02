@@ -6,18 +6,21 @@ import './Dashboard.css'
 
 export function Dashboard() {
     return (
-        <div className="dashBoard-container">
-            <Navbar />  {/* Barra de navegação lateral esquerda  */}
+        <div className="test">
 
-            <main> {/*Conteudo principal da página */}
-            
-                <Header /> {/* Header */}
+            <div className="dashBoard-container">
+                <Navbar />  {/* Barra de navegação lateral esquerda  */}
 
-                <section className="table-section"> {/* Secção princiapl com a tabela*/}
-                    <TableContainer />
-                </section>
-            </main>
+                <main> {/*Conteudo principal da página */}
 
+                    <Header /> {/* Header */}
+
+                    <section className="table-section"> {/* Secção princiapl com a tabela*/}
+                        <TableContainer />
+                    </section>
+                </main>
+
+            </div>
         </div>
     )
 }

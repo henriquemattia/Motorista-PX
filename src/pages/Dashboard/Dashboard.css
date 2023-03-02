@@ -1,9 +1,13 @@
+.test{
+
+    background-color: #F7F8F9;
+}
+
 .dashBoard-container {
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: row;
-    background-color: #F7F8F9;
 }
 
 main {
