@@ -6,8 +6,6 @@ import './Dashboard.css'
 
 export function Dashboard() {
     return (
-        <div className="test">
-
             <div className="dashBoard-container">
                 <Navbar />  {/* Barra de navegação lateral esquerda  */}
 
@@ -21,6 +19,5 @@ export function Dashboard() {
                 </main>
 
             </div>
-        </div>
     )
 }

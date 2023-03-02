@@ -70,7 +70,7 @@ export function AddingBalance() {
             }
             // Lógica responsavel por formatar o valor inserido pelo usuario e transformala em um FLOAT para que seja armazenado da forma necessaria no localStorage
         } else { // caso o usuario não insira nehum valor ou tente inserir algo que nao sejam numeros, tipo letras e simbolos
-            alert('Por Favor ensira um valor valido')
+            alert('Por favor insira um valor válido')
         }
     }
     return (
