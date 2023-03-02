@@ -1,6 +1,6 @@
+import { useNavigate } from 'react-router-dom'
 import qrCode from "../../assets/image1.svg"
 import copySvg from "../../assets/icon-park-outline_copy.svg"
-import { useNavigate } from 'react-router-dom'
 
 import './QRcodeGenerated.css'
 

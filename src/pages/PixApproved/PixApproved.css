@@ -26,20 +26,16 @@
         margin-top: 20vh;
     }
     .avatar > img{
-        /* border: solid brown 1px; */
         max-width: 80vw;
         max-height: 50vh;
     }
     .closeButton > img {
-        /* border: solid red 1px; */
-
         width: 40px;
         height: 40px;
     }
     .textPix{
         font-size: 30px;
         text-align: center;
-        /* border: solid green 1px; */
 
     }
 }

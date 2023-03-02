@@ -28,7 +28,7 @@ export function Table() {
                         <td data-label="Solicitação" className="space">28/12/2022 23:30</td>
                         <td data-label="Forma pgto.">PIX/Ted</td>
                         <td data-label="Vencimento">28/02/2022</td>
-                        <td data-label="Status"><div className="badge">Em progresso</div></td>
+                        <td data-label="Status"><div className="badge">Em pagamento</div></td>
                         <td>
                             <div className="icons-container">
                                 <img className="s-svg" src={copySvg} alt="" />
@@ -36,22 +36,6 @@ export function Table() {
                             </div>
                         </td>
                     </tr>
-                    <tr>
-                        <td data-label="ID">4145</td>
-                        <td data-label="Destino">Despesa</td>
-                        <td data-label="Valor">R$50,00</td>
-                        <td data-label="Solicitação" className="space">28/12/2022 23:30</td>
-                        <td data-label="Forma pgto.">PIX/Ted</td>
-                        <td data-label="Vencimento">28/02/2022</td>
-                        <td data-label="Status"><div className="badge">Em progresso</div></td>
-                        <td>
-                            <div className="icons-container">
-                                <img className="s-svg" src={copySvg} alt="" />
-                                <img className="s-svg" src={codeSvg} alt="" />
-                            </div>
-                        </td>
-                    </tr>
-
                 </tbody>
             </table>
         </div>

@@ -1,8 +1,10 @@
-import { ChangeEvent, useEffect, useState } from 'react'
+import { ChangeEvent, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+
 import './AddingBalance.css'
 
 export function AddingBalance() {
+
     const navigate = useNavigate()
     const [valor, setValor] = useState<string>()
 
@@ -15,41 +17,33 @@ export function AddingBalance() {
         v = 'R$' + ' ' + v
         event.target.value = v;
         setValor(v);
-
     };
 
-    const [balancedModifield, setBalancedModiefield] = useState<any>()
-    useEffect(() => {
-        function balanceATT() {
 
-        }
-        balanceATT()
+    function handleClick() { // Função que será chamado quando o usuario clicar no botao para Gerar o QRCode
+        if (valor && valor !== 'R$ 0,00') { // Verificando se o campo valor existe E se ele é diferente de R$ 0,00 para que nao seja armazenado valor nenhum no localstorage
+            if (localStorage.getItem("balance-modifield")) { // Verficando se existe item no localstorage
 
-    }, [balancedModifield])
+                // Existindo irá ser alterado o valor do storage "newbalance"  que é o responsavel por exibir o valor total na tela de Dashboard
+                
+                const balanceModifield = localStorage.getItem("balance-modifield") as any
+                const balancedModifieldNumber: number = parseFloat(balanceModifield)
 
-    function handleClick() { // Função que será chamado quando o usuario clicar no botao para GErar o QRCode
-        if (valor && valor !== 'R$ 0,00') { // Verificando se o campo valor existe e se ele é diferente de R$ 0,00 para que nao seja armazenado valor nehum no localstorage
-            if (localStorage.getItem("balance-modifield")) {
-                const saa = localStorage.getItem("balance-modifield") as any
-
-
-                const balancedModifieldNumber = parseFloat(saa)
-                console.log(balancedModifieldNumber);
-
-
-
-
+                    /////// bloco responsável por forçar o armazenmentodo numero total como FLoat(para que tenha casas decimais) pois ele é pré-setado no pdrão de moeda 'R$ 0.000,00'
                 const a = valor
                 const spli = a.split(" ")
                 const b = spli[1].replace(".", "")
-                const c = b.split(",")
+                const c = b.split(",")             
                 const rest = c[1]
 
                 const d = parseFloat(b)
                 const e = parseFloat(d + '.' + rest)
-
+                    ///////
+                console.log('Valor', valor);
+                console.log('E', e);
+                
+                
                 const newBalanceModifield = balancedModifieldNumber + e
-
 
                 localStorage.setItem('newbalance', `${newBalanceModifield}`)
 
@@ -63,13 +57,11 @@ export function AddingBalance() {
                 const rest = c[1]
 
                 const d = parseFloat(b)
-                // const e = d + '.' + rest
                 const e = parseFloat(d + '.' + rest)
                 let f = localStorage.getItem('balance') as any
                 const g = parseFloat(f)
                 const sum = g + e
-                const valorInicialFormatado = Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(sum)
-                //         setNewBalance(valorInicialFormatado)
+               
 
 
                 localStorage.setItem('newbalance', `${sum}`)

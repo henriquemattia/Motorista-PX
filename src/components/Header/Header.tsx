@@ -3,11 +3,10 @@ import { useEffect, useState } from 'react'
 import './Header.css'
 
 export function Header() {
-
-    const [initialBalance, setInitialBalance] = useState<string>('35500.00')
-    localStorage.setItem("balance", initialBalance)
-
+    const initialBalance: string = '35500.00'
     const [newBalance, setNewBalance] = useState<any>()
+
+    localStorage.setItem("balance", initialBalance)
 
     if (localStorage.getItem("newbalance")) {
         useEffect(() => {
@@ -17,30 +16,11 @@ export function Header() {
     }
     else {
         useEffect(() => {
-            // const initialTONUmber = parseFloat(initialBalance)
-            // const valorFormatado = Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(initialTONUmber)
             setNewBalance(initialBalance)
         })
     }
 
     const finalValue = Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(newBalance)
-    // const [addingBalance, setAddingBalance] = useState<any>()
-    // const [newBalance, setNewBalance] = useState<any>()
-
-    // useEffect(() => {
-    //     if (localStorage.getItem('newbalance')) {
-    //         setAddingBalance(localStorage.getItem('newbalance'))
-    //         let num = parseFloat(addingBalance)
-    //         const som = num + initialBalance
-    //         const valorFormatado = Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(som)
-    //         setNewBalance(valorFormatado)
-    //     }
-    //     else {
-    //         const valorInicialFormatado = Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(initialBalance)
-    //         setNewBalance(valorInicialFormatado)
-    //     }
-    // }, [addingBalance])
-
 
     return (
         <div className="container-header">
@@ -54,9 +34,8 @@ export function Header() {
                     <div style={{ gap: '2rem' }}>
                         <span >Aprovisionado: <strong>R$ 99.700,00</strong></span>
                         <span className='text-red' style={{ marginLeft: '1rem' }} >Dias pendentes <strong>R$ 30.000,00</strong></span>
-
-                        <p className="utils-header"  >Dias pendentes: <strong>R$ 30.000,00</strong></p>
-
+                        
+                        <p className="utils-header"  >Dias pendentes: <strong>R$ 30.000,00</strong></p> {/*Só vai aparecer na versão mobile */}
                     </div>
                 </div>
             </div>

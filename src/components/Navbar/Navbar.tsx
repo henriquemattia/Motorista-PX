@@ -8,7 +8,7 @@ import './Navbar.css'
 export function Navbar() {
     return (
         <>
-            <nav>  {/* Barra de navegação lateral esquerda  */}
+            <nav>  {/* Barra de navegação lateral esquerda e top na versão mobile  */}
                 <div className='nav-bar'>
                     <div className='nav-bar_top'>
                         <div>
