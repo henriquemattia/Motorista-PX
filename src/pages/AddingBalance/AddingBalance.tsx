@@ -39,9 +39,6 @@ export function AddingBalance() {
                 const d = parseFloat(b)
                 const e = parseFloat(d + '.' + rest)
                     ///////
-                console.log('Valor', valor);
-                console.log('E', e);
-                
                 
                 const newBalanceModifield = balancedModifieldNumber + e
 
