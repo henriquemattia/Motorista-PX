@@ -31,8 +31,6 @@ export function AddingBalance() {
             const a = valor
             const spli = a.split(" ")
             const b = spli[1].replaceAll(".", "")
-            console.log('recĺace', b);
-            
             const c = b.split(",")
             const rest = c[1]
 
@@ -40,8 +38,6 @@ export function AddingBalance() {
             const e = parseFloat(d + '.' + rest)
 
             const newBalanceModifield = balance + e
-            // console.log(e);
-            
 
             setBalance(newBalanceModifield)
 

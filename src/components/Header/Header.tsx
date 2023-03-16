@@ -9,19 +9,6 @@ export function Header() {
     const { balance } = useContext<TypeUserBalance>(UserBalance) 
     const [newBalance, setNewBalance] = useState(balance) 
 
-
-    // if (localStorage.getItem("newbalance")) {
-    //     useEffect(() => {
-    //         setBalance(localStorage.getItem("newbalance"))
-    //         localStorage.setItem("balance-modifield", newBalance)
-    //     }, [newBalance])
-    // }
-    // else {
-    //     useEffect(() => {
-    //         // setNewBalance(initialBalance)
-    //     })
-    // }
-
     const finalValue = Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(newBalance)
 
     return (
