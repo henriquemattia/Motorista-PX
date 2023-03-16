@@ -17,6 +17,8 @@ export function AddingBalance() {
         v = v.replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
         v = 'R$' + ' ' + v
         event.target.value = v;
+        // console.log(v);
+        
 
         setValor(v);
     };
@@ -28,7 +30,9 @@ export function AddingBalance() {
             /////// bloco responsável por forçar o armazenmentodo numero total como FLoat(para que tenha casas decimais) pois ele é pré-setado no pdrão de moeda 'R$ 0.000,00'
             const a = valor
             const spli = a.split(" ")
-            const b = spli[1].replace(".", "")
+            const b = spli[1].replaceAll(".", "")
+            console.log('recĺace', b);
+            
             const c = b.split(",")
             const rest = c[1]
 
@@ -36,6 +40,8 @@ export function AddingBalance() {
             const e = parseFloat(d + '.' + rest)
 
             const newBalanceModifield = balance + e
+            // console.log(e);
+            
 
             setBalance(newBalanceModifield)
 

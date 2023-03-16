@@ -1,4 +1,4 @@
-# In Desenvolvimento
+# Em Desenvolvimento
 
 Essa branch está utiilizando "Context API" ao invés do localstorage para fazer o 'saldo disponivel' se tornar modificavél.
 
