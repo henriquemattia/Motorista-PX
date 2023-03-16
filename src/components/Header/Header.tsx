@@ -1,24 +1,26 @@
 
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
+import UserBalance, { TypeUserBalance } from '../../contexts/UserBalance'
 import './Header.css'
 
+ 
+
 export function Header() {
-    const initialBalance: string = '35500.00'
-    const [newBalance, setNewBalance] = useState<any>()
+    const { balance } = useContext<TypeUserBalance>(UserBalance) 
+    const [newBalance, setNewBalance] = useState(balance) 
 
-    localStorage.setItem("balance", initialBalance)
 
-    if (localStorage.getItem("newbalance")) {
-        useEffect(() => {
-            setNewBalance(localStorage.getItem("newbalance"))
-            localStorage.setItem("balance-modifield", newBalance)
-        }, [newBalance])
-    }
-    else {
-        useEffect(() => {
-            setNewBalance(initialBalance)
-        })
-    }
+    // if (localStorage.getItem("newbalance")) {
+    //     useEffect(() => {
+    //         setBalance(localStorage.getItem("newbalance"))
+    //         localStorage.setItem("balance-modifield", newBalance)
+    //     }, [newBalance])
+    // }
+    // else {
+    //     useEffect(() => {
+    //         // setNewBalance(initialBalance)
+    //     })
+    // }
 
     const finalValue = Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(newBalance)
 
