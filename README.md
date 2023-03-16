@@ -1,16 +1,6 @@
-# UI COPY
+# In Desenvolvimento
 
-Case técninco de Front-End da empresa Motorista PX
-
-## 🚀 Começando
-
-Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
-
-### 📋 Pré-requisitos
-
-```
-Node v16 ou superior
-```
+Essa branch está utiilizando "Context API" ao invés do localstorage para fazer o 'saldo disponivel' se tornar modificavél.
 
 ### 🔧 Instalação
 
@@ -28,13 +18,11 @@ E para rodar localmente:
 npm run dev
 ```
 
-## 🛠️ Construído com
+## 🛠️ Ferramentas
 
 ___
 
-* [React](https://pt-br.reactjs.org/) - O framework web usado
-* [Vite](https://vitejs.dev/) - Ferramenta de compilação JavaScript
-* [React-Router-Doom](https://reactrouter.com/en/main) - Usado para gerar rotas 
+* [useContext - React](https://beta.reactjs.org/reference/react/useContext) - Nova Hook utilzado
 
 ___
 
