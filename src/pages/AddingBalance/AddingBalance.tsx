@@ -6,8 +6,9 @@ import './AddingBalance.css'
 
 export function AddingBalance() {
     const { balance, setBalance } = useContext<TypeUserBalance>(UserBalance)
-    const navigate = useNavigate()
+
     const [valor, setValor] = useState<string>()
+    const navigate = useNavigate()
 
     const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
         // Função que Formata o valor do imput "Valor" para que seja exibido apenas números e exiba no formato da moeda brasileira 'R$ 0.000,00'
@@ -17,12 +18,9 @@ export function AddingBalance() {
         v = v.replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
         v = 'R$' + ' ' + v
         event.target.value = v;
-        // console.log(v);
-        
 
         setValor(v);
     };
-
 
     function handleClick() { // Função que será chamado quando o usuario clicar no botao para Gerar o QRCode
         if (valor && valor !== 'R$ 0,00') { // Verificando se o campo valor existe E se ele é diferente de R$ 0,00 para que nao seja armazenado valor nenhum no localstorage
@@ -38,7 +36,6 @@ export function AddingBalance() {
             const e = parseFloat(d + '.' + rest)
 
             const newBalanceModifield = balance + e
-
             setBalance(newBalanceModifield)
 
             navigate('/qrcode')
@@ -46,6 +43,7 @@ export function AddingBalance() {
             alert('Por favor insira um valor válido')
         }
     }
+
     return (
         <>
             <div className="container-ballance">
@@ -68,7 +66,6 @@ export function AddingBalance() {
                     <input
                         placeholder='R$ 1.000,00'
                         type="text"
-                        // value={valor}
                         onChange={handleChange}
                     />
                 </div>
